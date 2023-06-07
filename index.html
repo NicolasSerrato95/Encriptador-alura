@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+
+    </head>
+    <body>
+        <section class="contenedor-uno">
+            <img src="/Imagenes proyecto/Logo.png" class="logo" alt="Logo">
+        </section>
+        <section class="contenedor-dos">
+            <div class="encriptar">
+                <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="advertencia">
+                <p><i class="bi bi-exclamation-circle-fill"></i> Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="boton-encrip" type="button" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="boton-desencrip" type="button" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="contenedor-tres">
+            <div class="resultado">
+                <textarea name="mensaje" class="mensaje" id="mensaje" cols="20" rows="10"></textarea>
+                <div class="mensaje-arg">
+                    <h2 class="mensaje-titulo">Ningún mensaje fue <br> encontrado</h2>
+                    <p class="mensaje-parrafo">Ingrese el texto que desees encriptar o <br> desencriptar.</p>
+                </div>
+                <div class="copiar">
+                   <button class="boton-copiar" type="button" onclick="btnCopiar()">Copiar</button>
+                </div>
+            </div>
+        </section>
+        <script src="/script.js"></script>
+    </body>
+</html>
